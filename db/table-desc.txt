@@ -1,0 +1,138 @@
++----------------------------+-----------------+------+-----+---------+----------------+
+| Field                      | Type            | Null | Key | Default | Extra          |
++----------------------------+-----------------+------+-----+---------+----------------+
+| id                         | int(5) unsigned | NO   | PRI | NULL    | auto_increment |
+| inst_id                    | varchar(128)    | NO   |     | NULL    |                |
+| inst_code                  | int(5) unsigned | NO   |     | NULL    |                |
+| eng_name                   | varchar(128)    | NO   |     | NULL    |                |
+| jap_name                   | varchar(128)    | NO   |     | NULL    |                |
+| kana                       | varchar(128)    | NO   |     | NULL    |                |
+| school_code                | int(5) unsigned | NO   |     | NULL    |                |
+| area                       | varchar(128)    | NO   |     | NULL    |                |
+| pref                       | varchar(128)    | NO   |     | NULL    |                |
+| postal_code                | varchar(128)    | NO   |     | NULL    |                |
+| access                     | varchar(128)    | NO   |     | NULL    |                |
+| instl_status               | varchar(128)    | NO   |     | NULL    |                |
+| study1                     | int(5) unsigned | NO   |     | NULL    |                |
+| study2                     | int(5) unsigned | NO   |     | NULL    |                |
+| study3                     | int(5) unsigned | NO   |     | NULL    |                |
+| study4                     | int(5) unsigned | NO   |     | NULL    |                |
+| study5                     | int(5) unsigned | NO   |     | NULL    |                |
+| study6                     | int(5) unsigned | NO   |     | NULL    |                |
+| study7                     | int(5) unsigned | NO   |     | NULL    |                |
+| study8                     | int(5) unsigned | NO   |     | NULL    |                |
+| study9                     | int(5) unsigned | NO   |     | NULL    |                |
+| study10                    | int(5) unsigned | NO   |     | NULL    |                |
+| study11                    | int(5) unsigned | NO   |     | NULL    |                |
+| study12                    | int(5) unsigned | NO   |     | NULL    |                |
+| study13                    | int(5) unsigned | NO   |     | NULL    |                |
+| study14                    | int(5) unsigned | NO   |     | NULL    |                |
+| study15                    | int(5) unsigned | NO   |     | NULL    |                |
+| study16                    | int(5) unsigned | NO   |     | NULL    |                |
+| study17                    | int(5) unsigned | NO   |     | NULL    |                |
+| sp_flg                     | int(5) unsigned | NO   |     | NULL    |                |
+| jur_url                    | varchar(128)    | NO   |     | NULL    |                |
+| manabi_url                 | varchar(128)    | NO   |     | NULL    |                |
+| url1                       | varchar(128)    | YES  |     | NULL    |                |
+| url2                       | varchar(128)    | NO   |     | NULL    |                |
+| url3                       | varchar(128)    | NO   |     | NULL    |                |
+| the_rnk                    | varchar(16)     | NO   |     | NULL    |                |
+| total_rnk                  | int(5) unsigned | NO   |     | NULL    |                |
+| total_rnk_v                | varchar(16)     | NO   |     | NULL    |                |
+| res_rnk                    | int(5) unsigned | NO   |     | NULL    |                |
+| res_rnk_v                  | varchar(16)     | NO   |     | NULL    |                |
+| eng_rnk                    | int(5) unsigned | NO   |     | NULL    |                |
+| eng_rnk_v                  | varchar(16)     | NO   |     | NULL    |                |
+| out_rnk                    | int(5) unsigned | NO   |     | NULL    |                |
+| out_rnk_v                  | varchar(16)     | NO   |     | NULL    |                |
+| env_rnk                    | int(5) unsigned | NO   |     | NULL    |                |
+| env_rnk_v                  | varchar(16)     | NO   |     | NULL    |                |
+| hokkaido-tohoku_rnk_v      | varchar(16)     | NO   |     | NULL    |                |
+| kitakanto-koshinetsu_rnk_v | varchar(16)     | NO   |     | NULL    |                |
+| shutoken_rnk_v             | varchar(16)     | NO   |     | NULL    |                |
+| hokuriku-tokai_rnk_v       | varchar(16)     | NO   |     | NULL    |                |
+| kinki_rnk_v                | varchar(16)     | NO   |     | NULL    |                |
+| chugoku-shikoku_rnk_v      | varchar(16)     | NO   |     | NULL    |                |
+| kyushu-okinawa_rnk_v       | varchar(16)     | NO   |     | NULL    |                |
+| manabi_rnk1                | int(5)          | NO   |     | NULL    |                |
+| manabi_rnk2                | varchar(16)     | NO   |     | NULL    |                |
+| manabi_rnk3                | varchar(16)     | NO   |     | NULL    |                |
+| manabi_text                | varchar(128)    | NO   |     | NULL    |                |
+| manabi_flag                | int(5)          | NO   |     | NULL    |                |
+| manabi_option              | varchar(128)    | NO   |     | NULL    |                |
+| rnk1                       | int(5) unsigned | YES  |     | NULL    |                |
+| rnk_v1                     | varchar(16)     | NO   |     | NULL    |                |
+| rnk2                       | int(5) unsigned | NO   |     | NULL    |                |
+| rnk_v2                     | varchar(16)     | NO   |     | NULL    |                |
+| total_score                | float(12,1)     | NO   |     | NULL    |                |
+| total_score_v              | varchar(16)     | NO   |     | NULL    |                |
+| total_score_p              | varchar(16)     | NO   |     | NULL    |                |
+| res_score                  | float(12,1)     | NO   |     | NULL    |                |
+| res_score_v                | varchar(16)     | NO   |     | NULL    |                |
+| res_score_p                | varchar(16)     | NO   |     | NULL    |                |
+| eng_score                  | float(12,1)     | NO   |     | NULL    |                |
+| eng_score_v                | varchar(16)     | NO   |     | NULL    |                |
+| eng_score_p                | varchar(16)     | NO   |     | NULL    |                |
+| out_score                  | float(12,1)     | NO   |     | NULL    |                |
+| out_score_v                | varchar(16)     | NO   |     | NULL    |                |
+| out_score_p                | varchar(16)     | NO   |     | NULL    |                |
+| env_score                  | float(12,1)     | NO   |     | NULL    |                |
+| env_score_v                | varchar(16)     | NO   |     | NULL    |                |
+| env_score_p                | varchar(16)     | NO   |     | NULL    |                |
+| fin_per_stu                | float(12,1)     | NO   |     | NULL    |                |
+| fin_per_stu_v              | varchar(16)     | NO   |     | NULL    |                |
+| fin_per_stu_p              | varchar(16)     | YES  |     | NULL    |                |
+| fac_per_stu                | float(12,1)     | NO   |     | NULL    |                |
+| fac_per_stu_v              | varchar(16)     | NO   |     | NULL    |                |
+| fac_per_stu_p              | varchar(16)     | YES  |     | NULL    |                |
+| biblio                     | float(12,1)     | NO   |     | NULL    |                |
+| biblio_v                   | varchar(16)     | NO   |     | NULL    |                |
+| biblio_p                   | varchar(16)     | YES  |     | NULL    |                |
+| mock_exam                  | float(12,1)     | NO   |     | NULL    |                |
+| mock_exam_v                | varchar(16)     | NO   |     | NULL    |                |
+| mock_exam_p                | varchar(16)     | YES  |     | NULL    |                |
+| funding                    | float(12,1)     | NO   |     | NULL    |                |
+| funding_v                  | varchar(16)     | NO   |     | NULL    |                |
+| funding_p                  | varchar(16)     | YES  |     | NULL    |                |
+| global                     | float(12,1)     | NO   |     | NULL    |                |
+| global_v                   | varchar(16)     | NO   |     | NULL    |                |
+| global_p                   | varchar(16)     | YES  |     | NULL    |                |
+| ability                    | float(12,1)     | NO   |     | NULL    |                |
+| ability_v                  | varchar(16)     | NO   |     | NULL    |                |
+| ability_p                  | varchar(16)     | YES  |     | NULL    |                |
+| emp_rep                    | float(12,1)     | NO   |     | NULL    |                |
+| emp_rep_v                  | varchar(16)     | NO   |     | NULL    |                |
+| emp_rep_p                  | varchar(16)     | YES  |     | NULL    |                |
+| rep                        | float(12,1)     | NO   |     | NULL    |                |
+| rep_v                      | varchar(16)     | NO   |     | NULL    |                |
+| rep_p                      | varchar(16)     | YES  |     | NULL    |                |
+| int_stu                    | float(12,1)     | NO   |     | NULL    |                |
+| int_stu_v                  | varchar(16)     | NO   |     | NULL    |                |
+| int_stu_p                  | varchar(16)     | NO   |     | NULL    |                |
+| int_staff                  | float(12,1)     | NO   |     | NULL    |                |
+| int_staff_v                | varchar(16)     | NO   |     | NULL    |                |
+| int_staff_p                | varchar(16)     | YES  |     | NULL    |                |
+| study_abroad_long          | float(12,1)     | NO   |     | NULL    |                |
+| study_abroad_long_v        | varchar(16)     | NO   |     | NULL    |                |
+| study_abroad_long_p        | varchar(16)     | NO   |     | NULL    |                |
+| study_abroad_short         | float(12,1)     | NO   |     | NULL    |                |
+| study_abroad_short_v       | varchar(16)     | NO   |     | NULL    |                |
+| study_abroad_short_p       | varchar(16)     | NO   |     | NULL    |                |
+| all_english                | float(12,1)     | NO   |     | NULL    |                |
+| all_english_v              | varchar(16)     | NO   |     | NULL    |                |
+| all_english_p              | varchar(16)     | NO   |     | NULL    |                |
+| active_learning            | float(12,1)     | NO   |     | NULL    |                |
+| active_learning_v          | varchar(16)     | NO   |     | NULL    |                |
+| active_learning_p          | varchar(16)     | NO   |     | NULL    |                |
+| career_decision            | float(12,1)     | NO   |     | NULL    |                |
+| career_decision_v          | varchar(16)     | NO   |     | NULL    |                |
+| career_decision_p          | varchar(16)     | NO   |     | NULL    |                |
+| opt1                       | varchar(128)    | NO   |     | NULL    |                |
+| opt2                       | varchar(128)    | NO   |     | NULL    |                |
+| opt3                       | varchar(128)    | NO   |     | NULL    |                |
+| opt4                       | varchar(128)    | NO   |     | NULL    |                |
+| opt5                       | varchar(128)    | NO   |     | NULL    |                |
+| text1                      | varchar(1024)   | NO   |     | NULL    |                |
+| text2                      | varchar(1024)   | NO   |     | NULL    |                |
+| text3                      | varchar(1024)   | NO   |     | NULL    |                |
++----------------------------+-----------------+------+-----+---------+----------------+

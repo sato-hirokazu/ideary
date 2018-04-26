@@ -1,0 +1,47 @@
+version: '3'
+services:
+  datastore:
+    image: busybox
+    volumes:
+      - db_data:/var/lib/mysql
+      - composer_install:/var/www/html/data/vendor
+  db:
+    image: mariadb:10.3
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./docker/db/initdb.d:/docker-entrypoint-initdb.d
+  nginx:
+    build: ./docker/nginx
+    ports:
+      - "8111:80"
+    depends_on:
+      - app
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - composer_install:/var/www/html/data/vendor
+      - ./application:/var/www/html/data/application
+      - ./composer.json:/var/www/html/data/composer.json
+      - ./index.php:/var/www/html/data/index.php
+      - ./db:/var/www/html/data/db
+      - ./static:/var/www/html/data/static
+      - ./system:/var/www/html/data/system
+      - ./sess_save_path:/var/www/html/data/sess_save_path
+    depends_on:
+      - db
+  composer:
+    image: composer:1.1
+    volumes:
+      - composer_install:/var/www/html/data/vendor
+      - ./composer.json:/var/www/html/data/composer.json
+volumes:
+  db_data:
+  composer_install:

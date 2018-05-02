@@ -11,8 +11,10 @@
 
 @section('content')
 <body>
-    <h1>Hello</h1>
-    <div>コンテンツ</div>
+    <h1>ideary</h1>
+    <div>
+      コンテンツ
+    </div>
 @stop
 
 @section('addJs')
